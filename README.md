@@ -65,45 +65,45 @@ src-workflow/
 ## 仓库结构与文件简介
 
 | 文件 / 文件夹 | 中文简介 |
+| 文件 / 文件夹 | 中文简介 / English |
 |---|---|
-| `plugin.json` | 可迁移 Agent Plugin 清单，声明名称、版本、描述、许可证 |
-| `mcp.json` | 本地 stdio MCP 服务器配置，启动 `srcGuardedWorkflow` |
-| `.codex-plugin/plugin.json` | Codex 插件元数据，绑定技能与 MCP 服务 |
-| `AGENTS.md` | 工作区指令，规范 SRC 测试流程、范围与人工审批红线 |
-| `CHANGELOG.md` | 版本变更记录，0.6.0 → 0.7.2 |
-| `LICENSE` | MIT 许可证 |
-| `README.md` | 本文件，快速上手、使用方法与仓库结构说明 |
-| `THIRD_PARTY_NOTICES.md` | 第三方来源与许可证（CK-Skills、SecSkills 等） |
-| `install.ps1` | Windows 安装器，安装到个人 Skill 目录与本地插件目录 |
-| `install.sh` | Linux/macOS 安装器 |
-| `requirements.txt` | Python 依赖（PyYAML、jsonschema） |
-| `config/scope.example.yaml` | 授权范围配置示例（主机、端口、路径、方法、速率） |
-| `knowledge/expert-routes.json` | 场景到专家 Playbook 的路由表，共 20 条 |
-| `knowledge/classes/*.json` | 27 类漏洞检测 Playbook（IDOR、SSRF、SQLi 等） |
-| `server/src_guarded_mcp.py` | MCP 工具服务主体，提供 22 个 MCP 工具 |
-| `server/intel_tools.py` | 空间搜索引擎工具（FOFA、Shodan 等） |
-| `server/surface_tools.py` | 表面探测工具（JS/HAR/路径/端口） |
-| `scripts/new_run.py` | 新建运行目录，初始化 `CLUEBOARD.md` / `CLUEBOARD.json` |
-| `scripts/guarded_http.py` | 受控 HTTP 请求，带范围、速率、重定向与审批门禁 |
-| `scripts/render_report.py` | 从已验证发现渲染报告草稿 |
-| `scripts/validate_finding.py` | 发现证据与 schema 校验 |
-| `scripts/check_scope.py` | URL 与方法范围校验 |
-| `scripts/scope_rules.py` | 范围规则引擎 |
-| `scripts/build_release.ps1` | 发布包构建脚本（测试 + 打包 ZIP） |
-| `skills/src-bug-bounty/SKILL.md` | 聊天入口 Skill，描述如何使用该插件 |
-| `skills/src-bug-bounty/references/*.md` | Skill 参考文档（专家路由、漏洞 Playbook、范围与证据、报告检查表、CK-Skills/SecSkills 集成） |
-| `templates/clueboard.md` | 跨轮线索板模板（Facts / Intents / Hints） |
-| `templates/report.md` | 报告草稿模板 |
-| `templates/finding.example.json` | 发现 JSON 示例 |
-| `schemas/finding.schema.json` | 发现数据结构 Schema |
-| `schemas/scope.schema.json` | 范围数据结构 Schema |
-| `tests/test_mcp_server.py` / `test_workflow.py` | MCP 工具与工作流测试，共 16 个用例 |
-| `.github/workflows/release.yml` | 标签触发的 GitHub Actions：测试、构建、发布 ZIP 资产 |
-| `migration/install.ps1 / install.sh / README.md` | 迁移包安装脚本与说明，用于换机部署 |
-| `dist/` | 发布构建产物（构建后生成，不提交） |
-| `runs/` | 测试运行目录（每次运行生成，不提交） |
-| `.pytest_cache/`、`.test-tmp/` | 测试缓存与临时目录（不提交） |
-
+| `plugin.json` | 可迁移 Agent Plugin 清单，声明名称、版本、描述、许可证 / Portable Agent Plugin manifest declaring name, version, description, license |
+| `mcp.json` | 本地 stdio MCP 服务器配置，启动 `srcGuardedWorkflow` / Local stdio MCP server configuration to start `srcGuardedWorkflow` |
+| `.codex-plugin/plugin.json` | Codex 插件元数据，绑定技能与 MCP 服务 / Codex plugin metadata binding skills and MCP service |
+| `AGENTS.md` | 工作区指令，规范 SRC 测试流程、范围与人工审批红线 / Workspace instructions regulating SRC testing flow, scope, and human approval red lines |
+| `CHANGELOG.md` | 版本变更记录，0.6.0 → 0.7.2 / Changelog, 0.6.0 → 0.7.2 |
+| `LICENSE` | MIT 许可证 / MIT License |
+| `README.md` | 本文件，快速上手、使用方法与仓库结构说明 / This file, quick start, usage, and repository structure |
+| `THIRD_PARTY_NOTICES.md` | 第三方来源与许可证（CK-Skills、SecSkills 等） / Third-party sources and licenses (CK-Skills, SecSkills, etc.) |
+| `install.ps1` | Windows 安装器，安装到个人 Skill 目录与本地插件目录 / Windows installer, installs to personal Skill directory and local plugin directory |
+| `install.sh` | Linux/macOS 安装器 / Linux/macOS installer |
+| `requirements.txt` | Python 依赖（PyYAML、jsonschema） / Python dependencies (PyYAML, jsonschema) |
+| `config/scope.example.yaml` | 授权范围配置示例（主机、端口、路径、方法、速率） / Authorization scope configuration example (host, port, path, method, rate) |
+| `knowledge/expert-routes.json` | 场景到专家 Playbook 的路由表，共 20 条 / Scenario-to-expert Playbook routing table, 20 routes |
+| `knowledge/classes/*.json` | 27 类漏洞检测 Playbook（IDOR、SSRF、SQLi 等） / 27 vulnerability detection Playbooks (IDOR, SSRF, SQLi, etc.) |
+| `server/src_guarded_mcp.py` | MCP 工具服务主体，提供 22 个 MCP 工具 / MCP tool service main body, provides 22 MCP tools |
+| `server/intel_tools.py` | 空间搜索引擎工具（FOFA、Shodan 等） / Space search engine tools (FOFA, Shodan, etc.) |
+| `server/surface_tools.py` | 表面探测工具（JS/HAR/路径/端口） / Surface detection tools (JS/HAR/path/port) |
+| `scripts/new_run.py` | 新建运行目录，初始化 `CLUEBOARD.md` / `CLUEBOARD.json` / Create new run directory, initialize `CLUEBOARD.md` / `CLUEBOARD.json` |
+| `scripts/guarded_http.py` | 受控 HTTP 请求，带范围、速率、重定向与审批门禁 / Controlled HTTP requests with scope, rate, redirect, and approval gates |
+| `scripts/render_report.py` | 从已验证发现渲染报告草稿 / Render report draft from validated findings |
+| `scripts/validate_finding.py` | 发现证据与 schema 校验 / Finding evidence and schema validation |
+| `scripts/check_scope.py` | URL 与方法范围校验 / URL and method scope validation |
+| `scripts/scope_rules.py` | 范围规则引擎 / Scope rule engine |
+| `scripts/build_release.ps1` | 发布包构建脚本（测试 + 打包 ZIP） / Release package build script (test + package ZIP) |
+| `skills/src-bug-bounty/SKILL.md` | 聊天入口 Skill，描述如何使用该插件 / Chat entry Skill, describes how to use this plugin |
+| `skills/src-bug-bounty/references/*.md` | Skill 参考文档（专家路由、漏洞 Playbook、范围与证据、报告检查表、CK-Skills/SecSkills 集成） / Skill reference documents (expert routing, vulnerability Playbook, scope & evidence, report checklist, CK-Skills/SecSkills integration) |
+| `templates/clueboard.md` | 跨轮线索板模板（Facts / Intents / Hints） / Cross-session clueboard template (Facts / Intents / Hints) |
+| `templates/report.md` | 报告草稿模板 / Report draft template |
+| `templates/finding.example.json` | 发现 JSON 示例 / Finding JSON example |
+| `schemas/finding.schema.json` | 发现数据结构 Schema / Finding data structure Schema |
+| `schemas/scope.schema.json` | 范围数据结构 Schema / Scope data structure Schema |
+| `tests/test_mcp_server.py` / `test_workflow.py` | MCP 工具与工作流测试，共 16 个用例 / MCP tool and workflow tests, 16 test cases |
+| `.github/workflows/release.yml` | 标签触发的 GitHub Actions：测试、构建、发布 ZIP 资产 / Tag-triggered GitHub Actions: test, build, publish ZIP assets |
+| `migration/install.ps1 / install.sh / README.md` | 迁移包安装脚本与说明，用于换机部署 / Migration package installation scripts and instructions, for cross-machine deployment |
+| `dist/` | 发布构建产物（构建后生成，不提交） / Release build artifacts (generated after build, not committed) |
+| `runs/` | 测试运行目录（每次运行生成，不提交） / Test run directory (generated on each run, not committed) |
+| `.pytest_cache/`、`.test-tmp/` | 测试缓存与临时目录（不提交） / Test cache and temporary directories (not committed) |
 ## 安装到个人环境
 
 Windows：
