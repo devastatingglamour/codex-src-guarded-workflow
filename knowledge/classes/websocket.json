@@ -11,3 +11,4 @@
   "approval": "required",
   "impact": ["confidentiality", "integrity", "real-time data exposure"]
 }
+
