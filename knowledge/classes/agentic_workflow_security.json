@@ -11,3 +11,4 @@
   "approval": "required",
   "impact": ["data disclosure", "tool abuse", "unauthorized actions", "supply-chain compromise", "sandbox or approval bypass"]
 }
+
