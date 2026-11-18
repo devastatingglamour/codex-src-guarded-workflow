@@ -126,3 +126,5 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+
+# 用途：validate_finding.py 工具脚本 / validate_finding.py utility script |
