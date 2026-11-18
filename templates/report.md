@@ -42,3 +42,5 @@ $reviewer_notes
 
 - Evidence has been minimized and reviewed for sensitive data.
 - This draft must not be submitted until a human confirms scope, reproducibility, impact, and program compliance.
+
+<!-- 用途：report.md 文档或数据模板 / report.md document or data template | -->
