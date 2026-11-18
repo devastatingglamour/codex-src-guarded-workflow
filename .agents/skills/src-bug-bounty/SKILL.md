@@ -148,3 +148,5 @@ Stop and report the exact reason when:
 ## Outputs
 
 The MCP server writes to `runs/<program>/<timestamp>/` with `evidence/`, `candidates/`, `reports/`, `logs/`, `run.json`, `notes.md`, `CLUEBOARD.md`, `CLUEBOARD.json`, and `attack-surface.md`.
+
+<!-- 用途：可迁移的 Codex 技能说明 / Portable Codex skill instructions | -->
