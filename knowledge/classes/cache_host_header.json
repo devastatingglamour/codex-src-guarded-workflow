@@ -11,3 +11,4 @@
   "approval": "required",
   "impact": ["XSS", "credential theft", "availability", "integrity"]
 }
+
