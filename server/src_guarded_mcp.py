@@ -1101,7 +1101,7 @@ def input_schema(properties: dict[str, Any], required: list[str] | None = None) 
 TOOL_DEFINITIONS = [
     {
         "name": "src_start",
-        "description": "Create an authorized run, perform passive DNS/CT reconnaissance, and collect one low-impact GET baseline. Requires explicit authorization_confirmed=true.",
+        "description": "Create an authorized run, perform passive DNS/CT reconnaissance, and collect one low-impact GET baseline. Requires explicit authorization_confirmed=true. / 创建授权运行，执行被动 DNS/CT 侦察，收集一次低影响 GET 基线。需要 authorization_confirmed=true。",
         "inputSchema": input_schema({
             "asset": {"type": "string", "description": "Explicitly authorized absolute URL"},
             "program": {"type": "string", "description": "SRC program name"},
@@ -1119,7 +1119,7 @@ TOOL_DEFINITIONS = [
     },
     {
         "name": "src_prepare_run",
-        "description": "Create a scoped run without sending target traffic.",
+        "description": "Create a scoped run without sending target traffic. / 创建带范围的运行，不发送目标流量。",
         "inputSchema": input_schema({
             "asset": {"type": "string"},
             "program": {"type": "string"},
@@ -1134,7 +1134,7 @@ TOOL_DEFINITIONS = [
     },
     {
         "name": "src_passive_recon",
-        "description": "Collect DNS, certificate-transparency, and passive observations for a prepared run. Does not send requests to the target.",
+        "description": "Collect DNS, certificate-transparency, and passive observations for a prepared run. Does not send requests to the target. / 为准备好的运行收集 DNS、证书透明度和被动观察。不向目标发送请求。",
         "inputSchema": input_schema({
             "run_id": {"type": "string"},
             "include_dns": {"type": "boolean", "default": True},
@@ -1143,7 +1143,7 @@ TOOL_DEFINITIONS = [
     },
     {
         "name": "src_asset_intel",
-        "description": "Query configured passive asset-intelligence providers such as FOFA, Shodan, Quake, Hunter, ZoomEye, and urlscan. Results are leads and are marked in_scope or out-of-scope.",
+        "description": "Query configured passive asset-intelligence providers such as FOFA, Shodan, Quake, Hunter, ZoomEye, and urlscan. Results are leads and are marked in_scope or out-of-scope. / 查询配置的被动资产情报提供商，如 FOFA、Shodan、Quake、Hunter、ZoomEye 和 urlscan。结果为线索并标记 in_scope 或范围外。",
         "inputSchema": input_schema({
             "run_id": {"type": "string"},
             "query": {"type": "string"},
@@ -1153,12 +1153,12 @@ TOOL_DEFINITIONS = [
     },
     {
         "name": "src_intel_status",
-        "description": "Show which passive intelligence provider API keys are configured.",
+        "description": "Show which passive intelligence provider API keys are configured. / 显示已配置哪些被动资产情报提供商 API 密钥。",
         "inputSchema": input_schema({}),
     },
     {
         "name": "src_js_inventory",
-        "description": "Fetch the baseline page and a bounded set of in-scope JavaScript assets, then inventory endpoints, parameters, and source maps. Requires a batch approval code.",
+        "description": "Fetch the baseline page and a bounded set of in-scope JavaScript assets, then inventory endpoints, parameters, and source maps. Requires a batch approval code. / 获取基线页面和有限的同源 JS 资产，然后清点端点、参数和 Source maps。需要批量批准码。",
         "inputSchema": input_schema({
             "run_id": {"type": "string"},
             "asset": {"type": "string"},
@@ -1169,7 +1169,7 @@ TOOL_DEFINITIONS = [
     },
     {
         "name": "src_import_har",
-        "description": "Import a browser or Burp HAR file stored inside the run directory and build an in-scope endpoint and parameter inventory.",
+        "description": "Import a browser or Burp HAR file stored inside the run directory and build an in-scope endpoint and parameter inventory. / 导入存储在运行目录中的浏览器或 Burp HAR 文件，并构建范围内的端点和参数清单。",
         "inputSchema": input_schema({
             "run_id": {"type": "string"},
             "har_path": {"type": "string"},
@@ -1177,7 +1177,7 @@ TOOL_DEFINITIONS = [
     },
     {
         "name": "src_path_probe",
-        "description": "Probe 1-25 supplied paths with rate limiting and a batch approval code. It does not use a wordlist or brute force.",
+        "description": "Probe 1-25 supplied paths with rate limiting and a batch approval code. It does not use a wordlist or brute force. / 以速率限制和批量批准码探测 1-25 条提供的路径。不使用字典或暴力破解。",
         "inputSchema": input_schema({
             "run_id": {"type": "string"},
             "base_url": {"type": "string"},
@@ -1189,7 +1189,7 @@ TOOL_DEFINITIONS = [
     },
     {
         "name": "src_port_probe",
-        "description": "Check 1-20 explicitly scoped ports with a batch approval code. Ports must already be allowed by scope.",
+        "description": "Check 1-20 explicitly scoped ports with a batch approval code. Ports must already be allowed by scope. / 以批量批准码检查 1-20 个明确范围的端口。端口必须已被范围允许。",
         "inputSchema": input_schema({
             "run_id": {"type": "string"},
             "ports": {"type": "array", "minItems": 1, "maxItems": 20, "items": {"type": "integer", "minimum": 1, "maximum": 65535}},
@@ -1199,7 +1199,7 @@ TOOL_DEFINITIONS = [
     },
     {
         "name": "src_check_scope",
-        "description": "Check a URL and method against the active run scope.",
+        "description": "Check a URL and method against the active run scope. / 针对活跃运行范围检查 URL 和方法。",
         "inputSchema": input_schema({
             "run_id": {"type": "string"},
             "url": {"type": "string"},
@@ -1208,7 +1208,7 @@ TOOL_DEFINITIONS = [
     },
     {
         "name": "src_http",
-        "description": "Send one scoped request via the guarded HTTP wrapper. Defaults to dry-run; high-risk or write operations require a chat approval code.",
+        "description": "Send one scoped request via the guarded HTTP wrapper. Defaults to dry-run; high-risk or write operations require a chat approval code. / 通过受控 HTTP 包装器发送一次范围内请求。默认干跑；高风险或写操作需要聊天审批码。",
         "inputSchema": input_schema({
             "run_id": {"type": "string"},
             "url": {"type": "string"},
@@ -1224,7 +1224,7 @@ TOOL_DEFINITIONS = [
     },
     {
         "name": "src_request_approval",
-        "description": "Create a pending chat approval request for a write or high-risk operation.",
+        "description": "Create a pending chat approval request for a write or high-risk operation. / 为写入或高风险操作创建待定聊天审批请求。",
         "inputSchema": input_schema({
             "run_id": {"type": "string"},
             "method": {"type": "string"},
@@ -1236,7 +1236,7 @@ TOOL_DEFINITIONS = [
     },
     {
         "name": "src_confirm_approval",
-        "description": "Confirm a pending approval only after the human replies with the exact APPROVE <code> phrase.",
+        "description": "Confirm a pending approval only after the human replies with the exact APPROVE <code> phrase. / 用户回复精确的 APPROVE <code> 语句后确认待定审批。",
         "inputSchema": input_schema({
             "run_id": {"type": "string"},
             "approval_code": {"type": "string"},
@@ -1245,7 +1245,7 @@ TOOL_DEFINITIONS = [
     },
     {
         "name": "src_save_finding",
-        "description": "Save and schema-check a candidate or verified finding in the run directory.",
+        "description": "Save and schema-check a candidate or verified finding in the run directory. / 在运行目录中保存并架构校验候选或已确认发现。",
         "inputSchema": input_schema({
             "run_id": {"type": "string"},
             "finding": {"type": "object"},
@@ -1253,7 +1253,7 @@ TOOL_DEFINITIONS = [
     },
     {
         "name": "src_validate_finding",
-        "description": "Run the evidence and schema gate for a saved finding.",
+        "description": "Run the evidence and schema gate for a saved finding. / 为已保存发现运行证据和架构门禁。",
         "inputSchema": input_schema({
             "run_id": {"type": "string"},
             "finding_id": {"type": "string"},
@@ -1261,7 +1261,7 @@ TOOL_DEFINITIONS = [
     },
     {
         "name": "src_render_report",
-        "description": "Render a human-reviewable Markdown report from a validated finding.",
+        "description": "Render a human-reviewable Markdown report from a validated finding. / 从已验证发现渲染可人工审查的 Markdown 报告。",
         "inputSchema": input_schema({
             "run_id": {"type": "string"},
             "finding_id": {"type": "string"},
@@ -1270,17 +1270,17 @@ TOOL_DEFINITIONS = [
     },
     {
         "name": "src_status",
-        "description": "Show run state, request count, findings, and approval status.",
+        "description": "Show run state, request count, findings, and approval status. / 显示运行状态、请求数、发现和审批状态。",
         "inputSchema": input_schema({"run_id": {"type": "string"}}, ["run_id"]),
     },
     {
         "name": "src_tool_status",
-        "description": "Detect which local reconnaissance and testing tools are available.",
+        "description": "Detect which local reconnaissance and testing tools are available. / 检测哪些本地侦察和测试工具可用。",
         "inputSchema": input_schema({}),
     },
     {
         "name": "src_vuln_playbook",
-        "description": "Return vulnerability classification and safe detection guidance by class ID, keyword, or priority.",
+        "description": "Return vulnerability classification and safe detection guidance by class ID, keyword, or priority. / 按类 ID、关键词或优先级返回漏洞分类和安全检测指导。",
         "inputSchema": input_schema({
             "class_id": {"type": "string", "description": "Playbook ID, for example idor_bola or ssrf"},
             "query": {"type": "string", "description": "Keyword such as JWT, upload, tenant, or GraphQL"},
@@ -1289,7 +1289,7 @@ TOOL_DEFINITIONS = [
     },
     {
         "name": "src_hunt_route",
-        "description": "Route a feature, technology, or observed signal to the relevant expert workflow, playbook classes, tools, and evidence gates.",
+        "description": "Route a feature, technology, or observed signal to the relevant expert workflow, playbook classes, tools, and evidence gates. / 将功能、技术或观察信号路由到相关专家工作流、Playbook 类、工具和证据门禁。",
         "inputSchema": input_schema({
             "query": {"type": "string", "description": "Feature or signal, for example JWT login, webpack source map, file upload, or blocked by WAF"},
             "route_id": {"type": "string", "description": "Exact expert route ID, for example recon-js-analysis or auth-access-control"},
@@ -1298,7 +1298,7 @@ TOOL_DEFINITIONS = [
     },
     {
         "name": "src_clueboard",
-        "description": "Read the Markdown clueboard or update its Markdown sections and Fact-Intent-Hint graph without writing outside the run directory.",
+        "description": "Read the Markdown clueboard or update its Markdown sections and Fact-Intent-Hint graph without writing outside the run directory. / 读取 Markdown 线索板或更新其 Markdown 节和事实-意图-提示图，不写出运行目录之外。",
         "inputSchema": input_schema({
             "run_id": {"type": "string"},
             "action": {"type": "string", "enum": ["read", "graph", "append", "set_focus", "add_fact", "add_intent", "add_hint", "update_intent"], "default": "read"},
@@ -1313,7 +1313,7 @@ TOOL_DEFINITIONS = [
     },
     {
         "name": "src_skill_audit",
-        "description": "Statically audit a local Skill directory before installation. Detects risky execution, approval bypass, prompt injection, secret, exfiltration, and obfuscation patterns; this is not a security certification.",
+        "description": "Statically audit a local Skill directory before installation. Detects risky execution, approval bypass, prompt injection, secret, exfiltration, and obfuscation patterns; this is not a security certification. / 安装前静态审计本地 Skill 目录。检测危险执行、审批绕过、提示词注入、密钥、外传和混淆模式；这不是安全认证。",
         "inputSchema": input_schema({
             "path": {"type": "string", "description": "Directory containing SKILL.md"},
             "max_files": {"type": "integer", "minimum": 1, "maximum": 500, "default": 200},
@@ -1463,6 +1463,7 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+
 
 
 
