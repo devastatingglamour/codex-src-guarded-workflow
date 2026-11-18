@@ -226,5 +226,4 @@ python -m unittest discover -s tests -v
 
 测试覆盖：MCP 初始化/工具列表、范围创建、线索板及 Facts/Intents/Hints 图、专家路由、Skill 供应链审计、dry-run、聊天审批门禁、候选发现校验、证据记录、重定向阻断和报告渲染。
 
-
-
+<!-- 用途：项目介绍、安装方法与文件索引 / Project overview, installation, and file index | -->
