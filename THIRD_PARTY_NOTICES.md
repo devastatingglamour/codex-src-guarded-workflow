@@ -74,3 +74,5 @@ The following sources informed high-level workflow design only. No source code w
 - Repository: https://github.com/sssmmmwww/wxmini-security-audit
 - License: MIT
 - Use: conceptual script-plus-LLM separation and deterministic coverage enumeration.
+
+<!-- 用途：第三方来源与许可说明 / Third-party source and license notices | -->
