@@ -11,3 +11,4 @@
   "approval": "required",
   "impact": ["authentication bypass", "confidentiality", "integrity"]
 }
+
