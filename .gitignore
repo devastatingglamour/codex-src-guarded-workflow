@@ -11,3 +11,5 @@ __pycache__/
 .venv/
 .test-tmp/
 dist/
+
+# 用途：Git 忽略规则 / Git ignore rules |
