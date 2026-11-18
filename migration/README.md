@@ -93,5 +93,4 @@ Skill 先调用 `src_tool_status`。缺少工具时，只有用户确认后才�
 
 不会自动安装来源不明的 GitHub 项目，也不会自动运行扫描器或暴力破解。
 
-
-
+<!-- 用途：技能或迁移参考文档 / Skill or migration reference documentation | -->
