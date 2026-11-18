@@ -11,3 +11,4 @@
   "approval": "required",
   "impact": ["remote code execution", "confidentiality", "integrity", "availability"]
 }
+
