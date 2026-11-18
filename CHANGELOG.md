@@ -4,6 +4,12 @@
 
 All notable changes to `src-guarded-workflow` are documented here.
 
+## [0.7.5] - 2026-11-18
+
+### 修复 / Fixed
+
+- MCP 标准输出固定为 UTF-8，避免 Windows 英文区域因中文工具描述导致编码失败。 / Set MCP stdout to UTF-8 to prevent encoding failures from Chinese tool descriptions on Windows English locales.
+
 ## [0.7.4] - 2026-11-18
 
 ### 修复 / Fixed

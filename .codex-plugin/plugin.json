@@ -1,6 +1,6 @@
 {
   "name": "src-guarded-workflow",
-  "version": "0.7.4",
+  "version": "0.7.5",
   "description": "Authorized SRC black-box workflow with expert routing, a Fact-Intent-Hint clueboard, Skill supply-chain auditing, and local MCP tools. / 授权 SRC 黑盒测试工作流，包含专家路由、事实-意图-提示线索板、Skill 供应链审计和本地 MCP 工具。",
   "skills": "./skills/",
   "mcpServers": "./mcp.json",

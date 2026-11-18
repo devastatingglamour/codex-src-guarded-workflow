@@ -29,7 +29,7 @@ SCHEMA_DIR = BASE_DIR / "schemas"
 RUNS_ROOT = Path(os.environ.get("SRC_GUARDED_RUNS_ROOT", str(BASE_DIR / "runs"))).resolve()
 SCOPE_ROOT = RUNS_ROOT / "_scopes"
 MCP_CALL_LOG = RUNS_ROOT / "_mcp-tool-calls.jsonl"
-SERVER_VERSION = "0.7.4"
+SERVER_VERSION = "0.7.5"
 WRITE_METHODS = {"POST", "PUT", "PATCH", "DELETE"}
 APPROVAL_RISKS = {
     "auth_flow",
@@ -1451,6 +1451,8 @@ def read_messages():
 
 
 def main() -> int:
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(encoding="utf-8")
     for message in read_messages():
         if not isinstance(message, dict):
             continue

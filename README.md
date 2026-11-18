@@ -2,7 +2,7 @@
 
 ## 当前版本
 
-当前发布版本为 `0.7.4`。版本变更记录见 `CHANGELOG.md`。 / Current release: `0.7.4`. See `CHANGELOG.md` for changes.
+当前发布版本为 `0.7.5`。版本变更记录见 `CHANGELOG.md`。 / Current release: `0.7.5`. See `CHANGELOG.md` for changes.
 
 版本迭代遵循：
 
@@ -72,7 +72,7 @@ src-workflow/
 | `mcp.json` | 本地 stdio MCP 服务器配置，启动 `srcGuardedWorkflow` / Local stdio MCP server configuration to start `srcGuardedWorkflow` |
 | `.codex-plugin/plugin.json` | Codex 插件元数据，绑定技能与 MCP 服务 / Codex plugin metadata binding skills and MCP service |
 | `AGENTS.md` | 工作区指令，规范 SRC 测试流程、范围与人工审批红线 / Workspace instructions regulating SRC testing flow, scope, and human approval red lines |
-| `CHANGELOG.md` | 版本变更记录，0.6.0 → 0.7.4 / Changelog, 0.6.0 → 0.7.4 |
+| `CHANGELOG.md` | 版本变更记录，0.6.0 → 0.7.5 / Changelog, 0.6.0 → 0.7.5 |
 | `LICENSE` | MIT 许可证 / MIT License |
 | `README.md` | 本文件，快速上手、使用方法与仓库结构说明 / This file, quick start, usage, and repository structure |
 | `THIRD_PARTY_NOTICES.md` | 第三方来源与许可证（CK-Skills、SecSkills 等） / Third-party sources and licenses (CK-Skills, SecSkills, etc.) |
