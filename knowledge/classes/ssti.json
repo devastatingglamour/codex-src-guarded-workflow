@@ -11,3 +11,4 @@
   "approval": "required",
   "impact": ["server-side execution risk", "confidentiality", "integrity"]
 }
+
