@@ -43,3 +43,5 @@ Immediately stop expansion when:
 - A redirect or link leaves the configured scope.
 - A requested action would require write access, persistence, or lateral movement.
 - The operator cannot confirm that the activity is allowed.
+
+<!-- 用途：技能或迁移参考文档 / Skill or migration reference documentation | -->
