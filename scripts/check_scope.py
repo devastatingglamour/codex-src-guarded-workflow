@@ -45,3 +45,5 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+
+# 用途：check_scope.py 工具脚本 / check_scope.py utility script |
