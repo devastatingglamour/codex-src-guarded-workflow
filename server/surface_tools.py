@@ -272,3 +272,4 @@ def port_probe(args: dict[str, Any]) -> dict[str, Any]:
             handle.write(f"- port {item['port']}: {'open' if item['open'] else 'closed/filtered'}\n")
     return {"ok": True, "status": "port_probe_complete", "run_id": run_meta["run_id"], "evidence": str(evidence), "record": record}
 
+# 用途：surface_tools.py MCP 或侦察服务模块 / surface_tools.py MCP or reconnaissance module |
