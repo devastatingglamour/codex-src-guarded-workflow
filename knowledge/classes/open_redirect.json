@@ -11,3 +11,4 @@
   "approval": "required",
   "impact": ["phishing", "OAuth token leakage", "trust boundary"]
 }
+
