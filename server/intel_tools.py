@@ -203,3 +203,4 @@ def asset_intel(args: dict[str, Any]) -> dict[str, Any]:
             handle.write(f"- [{item['source']}] `{item['url'] or item['host']}` in_scope={item['in_scope']}\n")
     return {"ok": True, "status": "asset_intel_complete", "run_id": run_meta["run_id"], "evidence": str(evidence), "record": record, "provider_status": provider_status()}
 
+# 用途：intel_tools.py MCP 或侦察服务模块 / intel_tools.py MCP or reconnaissance module |
