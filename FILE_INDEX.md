@@ -105,3 +105,5 @@
 | `templates/report.md` | report.md 文档或数据模板 / report.md document or data template |
 | `tests/test_mcp_server.py` | 对应模块的自动化测试 / Automated tests for the related module |
 | `tests/test_workflow.py` | 对应模块的自动化测试 / Automated tests for the related module |
+
+<!-- 用途：全部文件与目录的中英双语简介 / Bilingual descriptions for all files and directories | -->
