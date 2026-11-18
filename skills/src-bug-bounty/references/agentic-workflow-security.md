@@ -39,3 +39,5 @@ Record:
 ## Evidence
 
 A valid finding should show the workflow node, tool or data boundary, synthetic input, observed behavior, expected security rule, actual impact, and reproducibility. A prompt-only interaction that produces no unauthorized action or data access remains a candidate.
+
+<!-- 用途：技能或迁移参考文档 / Skill or migration reference documentation | -->
