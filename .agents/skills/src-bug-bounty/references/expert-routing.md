@@ -103,3 +103,5 @@ Before a finding can become `verified`, confirm:
 - Script-plus-LLM separation: deterministic enumeration supplies coverage; the model supplies context and false-positive filtering.
 
 See [secskills-integration.md](secskills-integration.md) and [agentic-workflow-security.md](agentic-workflow-security.md).
+
+<!-- 用途：技能或迁移参考文档 / Skill or migration reference documentation | -->
