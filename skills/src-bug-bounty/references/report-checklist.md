@@ -48,3 +48,5 @@ Before accepting a finding, record the normal-behavior explanation that was test
 - Do not paste real user data, live credentials, private tokens, or unnecessary internal infrastructure into the report.
 - State when a test was blocked, inconclusive, or performed only against synthetic data.
 - The final report is a human-reviewed draft until the operator submits it through the authorized channel.
+
+<!-- 用途：技能或迁移参考文档 / Skill or migration reference documentation | -->
