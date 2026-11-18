@@ -1466,24 +1466,4 @@ def main() -> int:
 if __name__ == "__main__":
     raise SystemExit(main())
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 用途：src_guarded_mcp.py MCP 或侦察服务模块 / src_guarded_mcp.py MCP or reconnaissance module |
