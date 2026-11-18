@@ -300,3 +300,4 @@ def main() -> int:
 if __name__ == "__main__":
     raise SystemExit(main())
 
+# 用途：guarded_http.py 工具脚本 / guarded_http.py utility script |
