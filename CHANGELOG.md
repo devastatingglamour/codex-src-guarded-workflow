@@ -75,3 +75,5 @@ All notable changes to `src-guarded-workflow` are documented here.
 3. 运行 Skill 验证器。 / Run the skill validator.
 4. 重建迁移包和便携包。 / Rebuild migration and portable artifacts.
 5. 提交、打 `vX.Y.Z` 标签、推送分支和标签，并创建 GitHub Release。 / Commit, tag `vX.Y.Z`, push the branch and tag, and create a GitHub Release.
+
+<!-- 用途：版本变更记录 / Version history | -->
