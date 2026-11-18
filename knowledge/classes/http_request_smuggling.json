@@ -11,3 +11,4 @@
   "approval": "required",
   "impact": ["auth bypass", "cache poisoning", "request hijacking", "availability"]
 }
+
