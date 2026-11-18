@@ -11,3 +11,4 @@
   "approval": "conditional",
   "impact": ["reconnaissance", "credential exposure", "further compromise"]
 }
+
