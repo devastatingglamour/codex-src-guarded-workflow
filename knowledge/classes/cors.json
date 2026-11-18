@@ -11,3 +11,4 @@
   "approval": "conditional",
   "impact": ["confidentiality", "cross-origin data theft"]
 }
+
