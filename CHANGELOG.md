@@ -4,6 +4,13 @@
 
 All notable changes to `src-guarded-workflow` are documented here.
 
+## [0.7.3] - 2026-11-18
+
+### 文档 / Documentation
+
+- 新增覆盖所有已跟踪文件与目录的中英双语索引，并修正 README 索引入口。 / Added a Chinese-English index covering every tracked file and directory, and fixed the README index entry.
+- 将 Codex 插件清单描述补为中英双语。 / Made the Codex plugin manifest description bilingual.
+
 ## [0.7.2] - 2026-11-10
 
 ### 修复 / Fixed
