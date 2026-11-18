@@ -11,3 +11,4 @@
   "approval": "required",
   "impact": ["data exfiltration", "tool misuse", "integrity", "account actions"]
 }
+
