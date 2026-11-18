@@ -11,3 +11,4 @@
   "approval": "required",
   "impact": ["internal reachability", "confidentiality", "cloud credential exposure"]
 }
+
