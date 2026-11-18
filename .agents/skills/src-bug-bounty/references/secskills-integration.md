@@ -65,3 +65,5 @@ Inspired by the mini-program audit pattern. Deterministic scripts enumerate cove
 ## Decision rule
 
 Use the existing guarded tool when it covers the capability. If a capability gap remains, evaluate an external project as an untrusted candidate: audit its skills and manifests, isolate it, test it on a lab target, and require explicit approval before it touches an authorized asset.
+
+<!-- 用途：技能或迁移参考文档 / Skill or migration reference documentation | -->
