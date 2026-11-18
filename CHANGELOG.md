@@ -4,6 +4,12 @@
 
 All notable changes to `src-guarded-workflow` are documented here.
 
+## [0.7.4] - 2026-11-18
+
+### 修复 / Fixed
+
+- 将 MCP 服务版本同步到插件版本，确保发布构建通过版本一致性检查。 / Synchronized the MCP server version with the plugin version so release builds pass the version consistency check.
+
 ## [0.7.3] - 2026-11-18
 
 ### 文档 / Documentation
