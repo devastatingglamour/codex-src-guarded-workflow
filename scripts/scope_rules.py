@@ -196,3 +196,5 @@ def assert_in_scope(scope: dict[str, Any], url: str, method: str = "GET") -> Sco
     if not decision.allowed:
         raise ScopeError(decision.reason)
     return decision
+
+# 用途：scope_rules.py 工具脚本 / scope_rules.py utility script |
