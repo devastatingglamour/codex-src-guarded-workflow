@@ -79,3 +79,5 @@ Burp Suite 或 Caido 可用于人工审查和证据捕获，但请求必须在�
 ## 输出契约 / Output contract
 
 每个运行位于 `runs/<program>/<timestamp>/`，包含 `evidence/`、`candidates/`、`reports/`、`logs/`、`run.json`、`notes.md`、`CLUEBOARD.md` 和 `attack-surface.md`。发现使用 `schemas/finding.schema.json` 中的架构。 / Every run lives under `runs/<program>/<timestamp>/` with `evidence/`, `candidates/`, `reports/`, `logs/`, `run.json`, `notes.md`, `CLUEBOARD.md`, and `attack-surface.md`. Findings use the schema in `schemas/finding.schema.json`.
+
+<!-- 用途：Agent 工作规则与安全边界 / Agent rules and safety boundaries | -->
