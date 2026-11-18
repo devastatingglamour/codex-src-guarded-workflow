@@ -68,3 +68,5 @@ Compress-Archive -Path (Join-Path $migration '*') -DestinationPath (Join-Path $D
 Write-Output "Built src-guarded-workflow $($plugin.version)"
 Write-Output (Join-Path $Dist 'src-guarded-workflow-portable.zip')
 Write-Output (Join-Path $Dist 'src-guarded-workflow-migration.zip')
+
+# 用途：build_release.ps1 工具脚本 / build_release.ps1 utility script |
