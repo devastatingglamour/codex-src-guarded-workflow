@@ -145,3 +145,5 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+
+# 用途：new_run.py 工具脚本 / new_run.py utility script |
