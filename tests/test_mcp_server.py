@@ -377,8 +377,4 @@ class MCPTests(unittest.TestCase):
 if __name__ == "__main__":
     unittest.main()
 
-
-
-
-
-
+# 用途：对应模块的自动化测试 / Automated tests for the related module |
