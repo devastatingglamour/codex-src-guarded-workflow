@@ -49,4 +49,4 @@ echo "Installed skill: ${SKILL_TARGET}"
 echo "Installed plugin: ${PLUGIN_TARGET}"
 echo "Restart Codex desktop, then enable src-guarded-workflow from the local marketplace."
 
-
+# 用途：install.sh 安装或构建脚本 / install.sh installation or build script |
