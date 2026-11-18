@@ -11,3 +11,4 @@
   "approval": "required",
   "impact": ["data exposure", "integrity", "supply-chain risk"]
 }
+
