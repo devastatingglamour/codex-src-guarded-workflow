@@ -84,3 +84,5 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+
+# 用途：render_report.py 工具脚本 / render_report.py utility script |
