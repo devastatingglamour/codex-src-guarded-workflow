@@ -39,3 +39,5 @@ jobs:
             .\dist\src-guarded-workflow-portable.zip `
             --title "src-guarded-workflow $tag" `
             --notes-file CHANGELOG.md
+
+# 用途：GitHub 自动化工作流 / GitHub automation workflow |
