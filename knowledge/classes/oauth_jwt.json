@@ -11,3 +11,4 @@
   "approval": "required",
   "impact": ["account takeover", "scope escalation", "confidentiality"]
 }
+
