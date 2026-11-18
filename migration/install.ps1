@@ -49,3 +49,5 @@ if ($LASTEXITCODE -ne 0) { throw 'Plugin installation failed.' }
 
 Write-Output 'Migration complete.'
 Write-Output 'Restart the Codex desktop app, then start a new chat and provide the SRC program, authorized asset, and authorization confirmation.'
+
+# 用途：迁移包文件 / Migration package file |
