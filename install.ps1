@@ -65,4 +65,4 @@ Write-Output "Installed plugin: $PluginTarget"
 Write-Output "Marketplace: $MarketplacePath"
 Write-Output "Restart the Codex desktop app, then enable src-guarded-workflow from the local marketplace."
 
-
+# 用途：install.ps1 安装或构建脚本 / install.ps1 installation or build script |
