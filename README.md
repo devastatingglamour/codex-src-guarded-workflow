@@ -2,7 +2,7 @@
 
 ## 当前版本
 
-当前发布版本为 `0.7.5`。版本变更记录见 `CHANGELOG.md`。 / Current release: `0.7.5`. See `CHANGELOG.md` for changes.
+当前发布版本为 `1.0.0`。版本变更记录见 `CHANGELOG.md`。 / Current release: `1.0.0`. See `CHANGELOG.md` for changes.
 
 版本迭代遵循：
 

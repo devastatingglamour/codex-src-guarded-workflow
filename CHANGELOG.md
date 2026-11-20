@@ -4,43 +4,11 @@
 
 All notable changes to `src-guarded-workflow` are documented here.
 
-## [0.7.5] - 2026-11-18
+## [1.0.0] - 2026-11-20
 
-### 修复 / Fixed
+### 发布 / Release
 
-- MCP 标准输出固定为 UTF-8，避免 Windows 英文区域因中文工具描述导致编码失败。 / Set MCP stdout to UTF-8 to prevent encoding failures from Chinese tool descriptions on Windows English locales.
-
-## [0.7.4] - 2026-11-18
-
-### 修复 / Fixed
-
-- 将 MCP 服务版本同步到插件版本，确保发布构建通过版本一致性检查。 / Synchronized the MCP server version with the plugin version so release builds pass the version consistency check.
-
-## [0.7.3] - 2026-11-18
-
-### 文档 / Documentation
-
-- 新增覆盖所有已跟踪文件与目录的中英双语索引，并修正 README 索引入口。 / Added a Chinese-English index covering every tracked file and directory, and fixed the README index entry.
-- 将 Codex 插件清单描述补为中英双语。 / Made the Codex plugin manifest description bilingual.
-
-## [0.7.2] - 2026-11-10
-
-### 修复 / Fixed
-
-- 使 `src_hunt_route` 返回稳定的 `status: ok` 和独立的 `result_type: expert_route`。 / Made `src_hunt_route` return a stable `status: ok` result and a separate `result_type: expert_route`.
-- 将默认路由响应改为单条最佳匹配，避免 MCP 客户端超时。 / Flattened the default route response to one best match to avoid MCP client timeouts.
-- 新增服务器端 MCP 调用时序元数据，不记录请求内容或敏感信息。 / Added server-side MCP call timing metadata without logging request content or secrets.
-
-### 工具 / Tooling
-
-- 新增 `scripts/build_release.ps1`，用于确定性发布打包。 / Added `scripts/build_release.ps1` for deterministic release packaging.
-- 新增标签触发的 GitHub Actions，完成测试、构建并发布迁移包和便携包 ZIP。 / Added a GitHub Actions tag workflow that tests, builds, and publishes migration and portable ZIP assets.
-
-## [0.7.1] - 2026-11-10
-
-### 修复 / Fixed
-
-- 为插件 MCP 配置添加必需的 `$schema`，使 Codex 加载 `srcGuardedWorkflow`。 / Added the required `$schema` to plugin MCP configuration so Codex loads `srcGuardedWorkflow`.
+- 版本重置为 1.0.0，旧版本历史已清理。 / Version reset to 1.0.0, old version history cleared.
 - 修正插件/市场安装路径。 / Corrected marketplace/plugin installation paths.
 - 验证 `src_tool_status` 可通过本地插件调用。 / Verified live `src_tool_status` calls through the local plugin.
 
