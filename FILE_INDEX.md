@@ -1,6 +1,6 @@
 # 文件与目录索引 / File and Directory Index
 
-本索引覆盖仓库内所有已跟踪文件及目录。GitHub 文件列表旁的说明属于提交信息；此处提供稳定的中英双语用途说明。 / This index covers every tracked file and directory. GitHub's file-list descriptions are commit messages; this document provides stable bilingual purpose descriptions.
+仓库文件与目录用途简介。 / Purpose of repository files and directories.
 
 | 路径 / Path | 简介 / Description |
 |---|---|
