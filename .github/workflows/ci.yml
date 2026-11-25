@@ -32,15 +32,7 @@ jobs:
           python -c "import json; json.load(open('plugin.json', encoding='utf-8')); json.load(open('.codex-plugin/plugin.json', encoding='utf-8')); json.load(open('mcp.json', encoding='utf-8')); print('plugin manifests OK')"
 
       - name: Validate version consistency
-        run: |
-          python -c "
-          import json, re, pathlib
-          plugin = json.load(open('plugin.json', encoding='utf-8'))['version']
-          codex = json.load(open('.codex-plugin/plugin.json', encoding='utf-8'))['version']
-          server = re.search(r'SERVER_VERSION\s*=\s*\"([^\"]+)\"', pathlib.Path('server/src_guarded_mcp.py').read_text(encoding='utf-8')).group(1)
-          assert plugin == codex == server, f'Version mismatch: plugin={plugin}, codex-plugin={codex}, server={server}'
-          print('Version consistency OK:', plugin)
-          "
+        run: python scripts/check_version.py
 
       - name: Build release artifacts
         shell: pwsh
