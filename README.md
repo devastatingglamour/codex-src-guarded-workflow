@@ -1,5 +1,5 @@
 # SRC Guarded Workflow
-[![CI](https://img.shields.io/github/actions/workflow/status/devastatingglamour/codex-src-guarded-workflow/ci.yml?branch=main&label=CI&logo=githubactions&logoColor=white&style=flat-square)](https://github.com/devastatingglamour/codex-src-guarded-workflow/actions/workflows/ci.yml)
+[![CI](https://github.com/devastatingglamour/codex-src-guarded-workflow/actions/workflows/ci.yml/badge.svg)](https://github.com/devastatingglamour/codex-src-guarded-workflow/actions/workflows/ci.yml) [![Version](https://img.shields.io/github/v/release/devastatingglamour/codex-src-guarded-workflow?label=Version)](https://github.com/devastatingglamour/codex-src-guarded-workflow/releases/latest)
 
 ## 当前版本
 
