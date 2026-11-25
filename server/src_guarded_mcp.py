@@ -1,7 +1,5 @@
-"""SRC 范围与审批门禁 MCP 服务。 / MCP server for SRC scope and approval gates."""
-
 #!/usr/bin/env python3
-"""Local stdio MCP server for the SRC guarded workflow."""
+"""SRC 范围与审批门禁 MCP 服务 / Local stdio MCP server for SRC scope and approval gates."""
 
 from __future__ import annotations
 

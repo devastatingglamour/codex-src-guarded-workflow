@@ -2,7 +2,7 @@
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "src-guarded-workflow",
   "version": "1.0.0",
-  "description": "Authorized SRC black-box workflow with scope enforcement, expert routing, a Fact-Intent-Hint clueboard, Skill supply-chain auditing, local MCP tools, human approval gates, evidence validation, and portable report generation. / 授权 SRC 黑盒工作流，带范围执行、专家路由、事实-意图-提示线索板、Skill 供应链审计、本地 MCP 工具、人工审批门禁、证据验证和可携带报告生成。",
+  "description": "授权 SRC 漏洞赏金测试工作流，含资产范围校验、受控侦察、人工审批验证、证据管理和报告草稿。 / Authorized SRC bug bounty workflow with scope enforcement, guarded reconnaissance, human-approved validation, evidence management, and report drafts.",
   "author": {
     "name": "Local operator"
   },
