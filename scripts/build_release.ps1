@@ -6,8 +6,8 @@ $ErrorActionPreference = 'Stop'
 $Root = (Resolve-Path (Join-Path $PSScriptRoot '..')).Path
 $Dist = Join-Path $Root 'dist'
 
-$plugin = Get-Content -Raw -LiteralPath (Join-Path $Root 'plugin.json') | ConvertFrom-Json
-$codexPlugin = Get-Content -Raw -LiteralPath (Join-Path $Root '.codex-plugin\plugin.json') | ConvertFrom-Json
+$plugin = Get-Content -Raw -LiteralPath (Join-Path $Root 'plugin.json') -Encoding UTF8 | ConvertFrom-Json
+$codexPlugin = Get-Content -Raw -LiteralPath (Join-Path $Root '.codex-plugin\plugin.json') -Encoding UTF8 | ConvertFrom-Json
 $serverText = Get-Content -Raw -LiteralPath (Join-Path $Root 'server\src_guarded_mcp.py')
 $match = [regex]::Match($serverText, 'SERVER_VERSION\s*=\s*"([^"]+)"')
 if (-not $match.Success) { throw 'Unable to read SERVER_VERSION' }
