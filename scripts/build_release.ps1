@@ -42,7 +42,7 @@ $pluginTarget = Join-Path $Dist 'src-guarded-workflow'
 New-Item -ItemType Directory -Path $pluginTarget -Force | Out-Null
 $items = @(
     'plugin.json', 'mcp.json', '.codex-plugin', 'skills', 'scripts', 'server', 'schemas',
-    'templates', 'config', 'knowledge', 'requirements.txt', 'README.md', 'CHANGELOG.md',
+    'templates', 'config', 'knowledge', 'requirements.txt', 'README.md',
     'AGENTS.md', 'LICENSE', 'THIRD_PARTY_NOTICES.md'
 )
 foreach ($item in $items) {

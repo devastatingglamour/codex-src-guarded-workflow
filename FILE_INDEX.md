@@ -35,9 +35,9 @@
 | `.agents/skills/src-bug-bounty/references/vulnerability-playbook.md` | 技能或迁移参考文档 / Skill or migration reference documentation |
 | `.codex-plugin/plugin.json` | Codex 插件清单 / Codex plugin manifest |
 | `.github/workflows/release.yml` | GitHub 自动化工作流 / GitHub automation workflow |
+| `.github/workflows/ci.yml` | 在 Windows runner 执行测试、版本检查和构建 / Run tests, version checks, and builds on a Windows runner |
 | `.gitignore` | Git 忽略规则 / Git ignore rules |
 | `AGENTS.md` | Agent 工作规则与安全边界 / Agent rules and safety boundaries |
-| `CHANGELOG.md` | 版本变更记录 / Version history |
 | `FILE_INDEX.md` | 全部文件与目录的中英双语简介 / Bilingual descriptions for all files and directories |
 | `LICENSE` | 项目许可证 / Project license |
 | `README.md` | 项目介绍、安装方法与文件索引 / Project overview, installation, and file index |
@@ -90,6 +90,7 @@
 | `scripts/render_report.py` | render_report.py 工具脚本 / render_report.py utility script |
 | `scripts/scope_rules.py` | scope_rules.py 工具脚本 / scope_rules.py utility script |
 | `scripts/validate_finding.py` | validate_finding.py 工具脚本 / validate_finding.py utility script |
+| `scripts/check_version.py` | 校验插件与 MCP 服务版本一致 / Check plugin and MCP server version consistency |
 | `server/intel_tools.py` | intel_tools.py MCP 或侦察服务模块 / intel_tools.py MCP or reconnaissance module |
 | `server/src_guarded_mcp.py` | src_guarded_mcp.py MCP 或侦察服务模块 / src_guarded_mcp.py MCP or reconnaissance module |
 | `server/surface_tools.py` | surface_tools.py MCP 或侦察服务模块 / surface_tools.py MCP or reconnaissance module |

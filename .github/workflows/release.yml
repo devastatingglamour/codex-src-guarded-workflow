@@ -38,6 +38,6 @@ jobs:
             .\dist\src-guarded-workflow-migration.zip `
             .\dist\src-guarded-workflow-portable.zip `
             --title "src-guarded-workflow $tag" `
-            --notes-file CHANGELOG.md
+            --notes "授权 SRC 黑盒测试工作流，包含范围校验、人工审批、证据验证与报告生成。 / Authorized SRC black-box workflow with scope checks, human approvals, evidence validation, and report generation."
 
 # 用途：GitHub 自动化工作流 / GitHub automation workflow |
